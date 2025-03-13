@@ -1,0 +1,377 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.login-page {
+    background-image: url('images/kesehatan.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 20px; /* Biar ada ruang kalau layar kecil */
+    overflow: hidden; /* Biar ga ada scroll yang aneh */
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 50px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), 
+                0 4px 10px rgba(0, 0, 0, 0.15); /* Tambahin efek shadow biar lebih deep */
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Biar konten di dalamnya lebih rapi */
+    justify-content: center;
+    transition: all 0.3s ease-in-out; /* Efek smooth pas ada interaksi */
+}
+
+.login-container:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25), 
+                0 6px 12px rgba(0, 0, 0, 0.18); /* Tambah efek hover */
+    transform: translateY(-5px); /* Naik dikit biar lebih hidup */
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 2px solid #ddd; /* Biar lebih soft dan modern */
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8); /* Biar ada efek kaca */
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #4a90e2; /* Kasih warna biru pas aktif */
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.5); /* Glow effect biar lebih hidup */
+    background: rgba(255, 255, 255, 1); /* Full putih pas fokus */
+}
+
+.login-container button {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe); /* Gradasi biar lebih hidup */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600; /* Biar lebih tegas */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+    box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3); /* Efek bayangan biar lebih pop-out */
+    outline: none;
+}
+
+.login-container button:hover {
+    background: linear-gradient(135deg, #00f2fe, #4facfe); /* Reverse warna pas hover */
+    transform: scale(1.07); /* Sedikit lebih besar buat efek interaksi */
+    box-shadow: 0 8px 20px rgba(0, 242, 254, 0.4); /* Bayangan lebih intens saat hover */
+}
+
+.login-container button:active {
+    transform: scale(0.97); /* Kesan ditekan */
+    box-shadow: 0 3px 10px rgba(0, 242, 254, 0.3);
+}
+
+.login-container p {
+    margin-top: 18px;
+    font-size: 15px; /* Naikin dikit biar lebih jelas */
+    color: #555; /* Lebih gelap dikit buat kontras */
+    line-height: 1.6; /* Biar lebih nyaman dibaca */
+}
+
+.login-container a {
+    color: #4facfe;
+    font-weight: 500; /* Biar lebih jelas */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.login-container a:hover {
+    color: #00f2fe;
+    text-shadow: 0 0 8px rgba(0, 242, 254, 0.6); /* Kasih glow effect biar lebih estetik */
+}
+/* Cart Section */
+.cart-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h2 {
+    text-align: center;
+    color: #4facfe;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-table th {
+    background: #f4f7f6;
+}
+
+/* Checkout Section */
+.checkout-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.checkout-container h2 {
+    text-align: center;
+    color: #4facfe;
+}
+
+/* Order History Section */
+.order-history-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.order-history-container h2 {
+    text-align: center;
+    color: #4facfe;
+}
+
+.order-history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-history-table th, .order-history-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.order-history-table th {
+    background: #f4f7f6;
+    font-weight: bold;
+}
+
+.order-history-table tr:hover {
+    background: #f1f1f1;
+}
+
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    background: #4facfe;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #00f2fe;
+    transform: scale(1.05);
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-top:-10 px ; 
+    margin-bottom:-10 px ;
+}
+
+.search-form input[type="text"] {
+    width: 300px;
+    padding: 12 px ;
+border-radius: 25 px ;
+border-color: #ccc ;
+font-size: 14 px ;
+margin-right: 10 px ;
+transition: border-color .3 s ease-in-out , box-shadow .3 s ease-in-out; 
+}
+
+.search-form button {
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.search-form button:hover {
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(79, 172, 254, 0.4); 
+}
+
+/* Product Grid Horizontal Scroll */
+.product-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 180px;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+    box-shadow:  0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    font-size: 13px;
+    color: #555;
+}
+
+.product-card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2575fc;
+}
+
+/* Horizontal Scroll Styling */
+.product-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.product-grid::-webkit-scrollbar-thumb {
+    background-color: #4facfe;
+    border-radius: 10px;
+}
+
+.product-grid::-webkit-scrollbar-track {
+    background: #f4f7f6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Transaction History Table */
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px;
+}
+
+.transaction-table th, .transaction-table td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.transaction-table th {
+    background: #4facfe;
+    color: white;
+}
+
+.transaction-table tr:hover {
+    background-color:  rgba(79, 172, 254, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Transaction Details */
+.transaction-details {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
